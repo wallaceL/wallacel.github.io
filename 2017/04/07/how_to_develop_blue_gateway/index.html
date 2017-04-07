@@ -87,12 +87,17 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="wallace's blog">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="网关概述该网关产品是基于高通 qca4531 以及 csr8811 芯片上开发的蓝牙 mesh 网关产品。高通 qca4531 运行 Openwrt 系统，通过 3 线 PTA 与 csr8811 通信。用户可以通过以下三种方式控制蓝牙 mesh 中的设备。  蓝牙通道 顾名思义，用户可以直接用手机蓝牙功能直接对设备进行控制，不需要通过其他网络。  网关通道 通过局域网来控制蓝牙 mesh 网络中">
+<meta name="keywords">
+<meta property="og:type" content="article">
+<meta property="og:title" content="通过 qca4531 实现蓝牙 mesh 网关开发指南">
+<meta property="og:url" content="http://yoursite.com/2017/04/07/how_to_develop_blue_gateway/index.html">
 <meta property="og:site_name" content="wallace's blog">
+<meta property="og:description" content="网关概述该网关产品是基于高通 qca4531 以及 csr8811 芯片上开发的蓝牙 mesh 网关产品。高通 qca4531 运行 Openwrt 系统，通过 3 线 PTA 与 csr8811 通信。用户可以通过以下三种方式控制蓝牙 mesh 中的设备。  蓝牙通道 顾名思义，用户可以直接用手机蓝牙功能直接对设备进行控制，不需要通过其他网络。  网关通道 通过局域网来控制蓝牙 mesh 网络中">
+<meta property="og:updated_time" content="2017-04-07T08:11:21.741Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="wallace's blog">
+<meta name="twitter:title" content="通过 qca4531 实现蓝牙 mesh 网关开发指南">
+<meta name="twitter:description" content="网关概述该网关产品是基于高通 qca4531 以及 csr8811 芯片上开发的蓝牙 mesh 网关产品。高通 qca4531 运行 Openwrt 系统，通过 3 线 PTA 与 csr8811 通信。用户可以通过以下三种方式控制蓝牙 mesh 中的设备。  蓝牙通道 顾名思义，用户可以直接用手机蓝牙功能直接对设备进行控制，不需要通过其他网络。  网关通道 通过局域网来控制蓝牙 mesh 网络中">
 
 
 
@@ -120,13 +125,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/04/07/how_to_develop_blue_gateway/"/>
 
 
 
 
 
-  <title> wallace's blog </title>
+  <title> 通过 qca4531 实现蓝牙 mesh 网关开发指南 | wallace's blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -151,9 +156,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-   page-home 
- ">
+  <div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -236,9 +239,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -268,10 +271,7 @@
             
             
               
-                
-                <a class="post-title-link" href="/2017/04/07/how_to_develop_blue_gateway/" itemprop="url">
-                  通过 qca4531 实现蓝牙 mesh 网关开发指南
-                </a>
+                通过 qca4531 实现蓝牙 mesh 网关开发指南
               
             
           </h1>
@@ -322,9 +322,7 @@
       
 
       
-        
-          
-            <h2 id="网关概述"><a href="#网关概述" class="headerlink" title="网关概述"></a>网关概述</h2><p>该网关产品是基于高通 qca4531 以及 csr8811 芯片上开发的蓝牙 mesh 网关产品。高通 qca4531 运行 Openwrt 系统，通过 3 线 PTA 与 csr8811 通信。用户可以通过以下三种方式控制蓝牙 mesh 中的设备。</p>
+        <h2 id="网关概述"><a href="#网关概述" class="headerlink" title="网关概述"></a>网关概述</h2><p>该网关产品是基于高通 qca4531 以及 csr8811 芯片上开发的蓝牙 mesh 网关产品。高通 qca4531 运行 Openwrt 系统，通过 3 线 PTA 与 csr8811 通信。用户可以通过以下三种方式控制蓝牙 mesh 中的设备。</p>
 <ul>
 <li><p>蓝牙通道</p>
 <p>顾名思义，用户可以直接用手机蓝牙功能直接对设备进行控制，不需要通过其他网络。</p>
@@ -382,20 +380,27 @@
 <p><a href="https://raw.githubusercontent.com/wallaceL/docs/master/resources/CSRmesh_2_0_1_GatewaySB_icp.zip" target="_blank" rel="external">gatewaySB source and documents</a></p>
 <p><a href="https://raw.githubusercontent.com/wallaceL/docs/master/resources/CSRmesh_2_0_1_GatewayNB_icp.zip" target="_blank" rel="external">gatewayNB source and documents</a></p>
 
-          
+      
+    </div>
+
+    <div>
+      
         
+
       
     </div>
 
     <div>
       
-    </div>
+        
 
-    <div>
       
     </div>
 
     <div>
+      
+        
+
       
     </div>
 
@@ -403,150 +408,38 @@
       
 
       
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/04/07/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="wallace">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="wallace's blog">
-    </span>
-
-    
-      <header class="post-header">
-
         
-        
-          <h1 class="post-title" itemprop="name headline">
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-              
-                
-                <a class="post-title-link" href="/2017/04/07/hello-world/" itemprop="url">
-                  Hello World
-                </a>
-              
+              <a href="/2017/04/07/hello-world/" rel="prev" title="Hello World">
+                Hello World <i class="fa fa-chevron-right"></i>
+              </a>
             
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-04-07T10:38:33+08:00">
-                2017-04-07
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -554,6 +447,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -573,8 +470,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
@@ -618,6 +524,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#网关概述"><span class="nav-number">1.</span> <span class="nav-text">网关概述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#开发工具"><span class="nav-number">2.</span> <span class="nav-text">开发工具</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#开发环境搭建"><span class="nav-number">3.</span> <span class="nav-text">开发环境搭建</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#网关关联到网络"><span class="nav-number">3.1.</span> <span class="nav-text">网关关联到网络</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#加入蓝牙设备"><span class="nav-number">3.2.</span> <span class="nav-text">加入蓝牙设备</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#通道选择"><span class="nav-number">3.3.</span> <span class="nav-text">通道选择</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#troubleshooting"><span class="nav-number">4.</span> <span class="nav-text">troubleshooting</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#技术资源"><span class="nav-number">5.</span> <span class="nav-text">技术资源</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -725,6 +647,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
 
   
 
